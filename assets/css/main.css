@@ -22,8 +22,19 @@ html {
   padding: 0;
 }
 
-body font {
+body {
   font-size: 1.125em;
+  font-family: "Barlow", sans-serif;
+  color: hsl(232deg, 10%, 55%);
+}
+
+h1,
+h2,
+h3,
+.learn,
+.name {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
 }
 
 img {
@@ -59,6 +70,143 @@ ul {
 /*
  *	MAIN CONTENT
  ------------------------------------------------------ */
+/* Header */
+header {
+  background: url(/assets/images/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  padding: 2em 2em 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: hsl(0deg, 0%, 100%);
+  position: absolute;
+  top: 6em;
+  right: 10%;
+  padding: 1.5em 0;
+  width: 80%;
+  height: 19em;
+}
+
+.nav-link-li {
+  margin: 1em 0;
+}
+
+.nav-link-li:nth-child(4) {
+  margin-top: 1.3em;
+}
+
+.nav-link {
+  color: hsl(232deg, 10%, 55%);
+}
+
+.nav-link-contact {
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", serif;
+  background: hsl(51deg, 100%, 49%);
+  border-radius: 30px;
+}
+
+.pointer {
+  display: unset;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: hsl(0deg, 0%, 100%);
+  right: 0;
+  top: -25px;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.burger {
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+.burger:hover, .burger:focus {
+  transform: scale(1.2);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 2.1em;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  margin: 2.5em 0;
+}
+
+.arrow-down {
+  transition: ease-in-out 0.1s;
+}
+.arrow-down:hover, .arrow-down:focus {
+  transform: scale(1.1);
+}
+
+/* Main */
+/* Brand and Audience */
+.brand-text-wrap,
+.audience-text-wrap {
+  padding: 3.5em 2em;
+  text-align: center;
+}
+
+.brand-heading,
+.audience-heading {
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 0.8em;
+}
+
+.brand-text,
+.audience-text {
+  line-height: 1.6em;
+  font-size: 0.94em;
+}
+
+.learn {
+  display: block;
+  margin-top: 1.8em;
+  text-transform: uppercase;
+}
+
+/* Graphic design and Photography */
+.photography-text,
+.graphic-text {
+  padding: 2em;
+}
+
+.graphic-text,
+.graphic-heading {
+  color: hsl(167deg, 40%, 24%);
+}
+
+.photography-text,
+.photography-heading {
+  color: hsl(198deg, 62%, 26%);
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
