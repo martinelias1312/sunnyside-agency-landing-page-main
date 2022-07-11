@@ -18,9 +18,18 @@ html {
 }
 
 body {
-  font {
-    font-size: $font-size-body;
-  }
+  font-size: $font-size-body;
+  font-family: $font-family-barlow;
+  color: $color-dark-grayish-blue;
+}
+
+h1,
+h2,
+h3,
+.learn,
+.name {
+  font-family: $font-family-fraunces;
+  color: $color-very-dark-desaturated-blue;
 }
 
 img {

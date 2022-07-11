@@ -4,6 +4,145 @@
 /*
  *	MAIN CONTENT
  ------------------------------------------------------ */
+/* Header */
+header {
+  background: url(/assets/images/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  padding: 2em 2em 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: $color-white;
+  position: absolute;
+  top: 6em;
+  right: 10%;
+  padding: 1.5em 0;
+  width: 80%;
+  height: 19em;
+}
+
+.nav-link-li {
+  margin: 1em 0;
+}
+
+.nav-link-li:nth-child(4) {
+  margin-top: 1.3em;
+}
+
+.nav-link {
+  color: $color-dark-grayish-blue;
+}
+
+.nav-link-contact {
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  color: $color-very-dark-desaturated-blue;
+  font-family: $font-family-fraunces;
+  background: $color-yellow;
+  border-radius: 30px;
+}
+
+.pointer {
+  display: unset;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: $color-white;
+  right: 0;
+  top: -25px;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.burger {
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 2.1em;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  margin: 2.5em 0;
+}
+
+.arrow-down {
+  transition: ease-in-out 0.1s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+/* Main */
+/* Brand and Audience */
+.brand-text-wrap,
+.audience-text-wrap {
+  padding: 3.5em 2em;
+  text-align: center;
+}
+
+.brand-heading,
+.audience-heading {
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 0.8em;
+}
+
+.brand-text,
+.audience-text {
+  line-height: 1.6em;
+  font-size: 0.94em;
+}
+
+.learn {
+  display: block;
+  margin-top: 1.8em;
+  text-transform: uppercase;
+}
+
+/* Graphic design and Photography */
+.photography-text,
+.graphic-text {
+  padding: 2em;
+}
+
+.graphic-text,
+.graphic-heading {
+  color: $color-dark-desaturated-cyan-graphic-design-text;
+}
+
+.photography-text,
+.photography-heading {
+  color: $color-dark-blue-photography-text;
+}
 
 /* Footer */
 .attribution {
