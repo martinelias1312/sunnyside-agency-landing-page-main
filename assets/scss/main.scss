@@ -299,16 +299,17 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 2em 0 5em;
-  transition: all ease-in-out 1s;
-
-  & li:hover,
-  & li:focus {
-    transform: scale(1.1);
-  }
 }
 
 .footer-list-a {
   color: $color-dark-moderate-cyan-footer;
+  transition: all ease-in-out 0.2s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    color: $color-white;
+  }
 }
 
 .socials-list {
@@ -316,11 +317,12 @@ header {
   justify-content: center;
   gap: 1.5em;
   margin-bottom: 2em;
-  transition: ease-in-out 0.8s;
+}
 
-  & li:hover,
-  & li:focus {
-    transform: scale(1.1);
+.socials-list-a:hover,
+.socials-list-a:focus {
+  & svg path {
+    fill: $color-white;
   }
 }
 
