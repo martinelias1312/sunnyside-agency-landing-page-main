@@ -131,7 +131,7 @@ header {
 /* Graphic design and Photography */
 .graphic,
 .photography {
-  padding: 1.5em;
+  padding: 1.4em;
   text-align: center;
   line-height: 1.5em;
   aspect-ratio: 0.625;
@@ -181,7 +181,7 @@ header {
 /* Testimonials */
 .testimonials {
   text-align: center;
-  padding: 1em 2.8em;
+  padding: 1em 1em;
 }
 
 .testimonials-heading {
@@ -220,7 +220,56 @@ header {
   }
 }
 
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* Footer */
+.footer {
+  background: hsl(167, 65%, 80%);
+  padding: 2em;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-top: 1.5em;
+  & path {
+    fill: $color-dark-moderate-cyan-footer;
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0 5em;
+  transition: all ease-in-out 1s;
+
+  & li:hover,
+  & li:focus {
+    transform: scale(1.1);
+  }
+}
+
+.footer-list-a {
+  color: $color-dark-moderate-cyan-footer;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-bottom: 2em;
+  transition: ease-in-out 0.8s;
+
+  & li:hover,
+  & li:focus {
+    transform: scale(1.1);
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
