@@ -178,6 +178,48 @@ header {
   color: $color-dark-blue-photography-text;
 }
 
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 1em 2.8em;
+}
+
+.testimonials-heading {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 5px;
+  color: $color-grayish-blue;
+  margin: 3.5em 0;
+}
+
+.testimonials-figure {
+  margin-bottom: 4em;
+}
+
+.img-profile {
+  border-radius: 50%;
+  max-width: 70px;
+}
+
+.testimonials-figcaption {
+  margin-top: 2.2em;
+  line-height: 1.6em;
+  font-size: 1.05em;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  margin-top: 1.7em;
+
+  & span {
+    font-family: $font-family-barlow;
+    font-size: 0.85em;
+    color: $color-grayish-blue;
+  }
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;

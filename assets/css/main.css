@@ -31,6 +31,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 .learn,
 .name {
   font-family: "Fraunces", serif;
@@ -239,6 +240,47 @@ header {
 .photography-p,
 .photography-heading {
   color: hsl(198deg, 62%, 26%);
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 1em 2.8em;
+}
+
+.testimonials-heading {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 5px;
+  color: hsl(210deg, 4%, 67%);
+  margin: 3.5em 0;
+}
+
+.testimonials-figure {
+  margin-bottom: 4em;
+}
+
+.img-profile {
+  border-radius: 50%;
+  max-width: 70px;
+}
+
+.testimonials-figcaption {
+  margin-top: 2.2em;
+  line-height: 1.6em;
+  font-size: 1.05em;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  margin-top: 1.7em;
+}
+.name span {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.85em;
+  color: hsl(210deg, 4%, 67%);
 }
 
 /* Footer */
