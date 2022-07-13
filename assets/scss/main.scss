@@ -126,6 +126,61 @@ header {
   display: block;
   margin-top: 1.8em;
   text-transform: uppercase;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    bottom: -25px;
+
+    width: 8.5625rem;
+    height: 0.625rem;
+    border-radius: 0.3125rem;
+
+    opacity: 0.25;
+
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    bottom: 6px;
+
+    width: 8.5625rem;
+    height: 0.625rem;
+    border-radius: 0.3125rem;
+
+    z-index: -1;
+
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: right bottom;
+    transition: 500ms;
+    transition-property: opacity, transform;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left bottom;
+  }
+}
+
+.learn-brand::before,
+.learn-brand::after {
+  background-color: $color-soft-red;
+}
+
+.learn-audience::before,
+.learn-audience::after {
+  background-color: $color-yellow;
 }
 
 /* Graphic design and Photography */
