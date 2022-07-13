@@ -129,17 +129,51 @@ header {
 }
 
 /* Graphic design and Photography */
-.photography-text,
-.graphic-text {
-  padding: 2em;
+.graphic,
+.photography {
+  padding: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  aspect-ratio: 0.625;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
-.graphic-text,
+.graphic {
+  background: url("/assets/images/mobile/image-graphic-design.jpg") no-repeat;
+  background-size: cover;
+}
+
+.photography {
+  background: url("/assets/images/mobile/image-photography.jpg") no-repeat;
+  background-size: cover;
+}
+
+.graphic-text-wrap,
+.photography-text-wrap {
+  margin-bottom: 1.5em;
+}
+
+.graphic-heading,
+.photography-heading {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+.graphic-p,
+.photography-p {
+  font-size: 0.86em;
+}
+
+.graphic-p,
 .graphic-heading {
   color: $color-dark-desaturated-cyan-graphic-design-text;
 }
 
-.photography-text,
+.photography-p,
 .photography-heading {
   color: $color-dark-blue-photography-text;
 }
