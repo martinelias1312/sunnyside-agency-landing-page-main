@@ -195,7 +195,7 @@ header {
 /* Graphic design and Photography */
 .graphic,
 .photography {
-  padding: 1.5em;
+  padding: 1.4em;
   text-align: center;
   line-height: 1.5em;
   aspect-ratio: 0.625;
@@ -245,7 +245,7 @@ header {
 /* Testimonials */
 .testimonials {
   text-align: center;
-  padding: 1em 2.8em;
+  padding: 1em 1em;
 }
 
 .testimonials-heading {
@@ -283,7 +283,52 @@ header {
   color: hsl(210deg, 4%, 67%);
 }
 
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* Footer */
+.footer {
+  background: hsl(167deg, 65%, 80%);
+  padding: 2em;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-top: 1.5em;
+}
+.footer-logo path {
+  fill: hsl(168deg, 34%, 41%);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0 5em;
+  transition: all ease-in-out 1s;
+}
+.footer-list li:hover, .footer-list li:focus {
+  transform: scale(1.1);
+}
+
+.footer-list-a {
+  color: hsl(168deg, 34%, 41%);
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-bottom: 2em;
+  transition: ease-in-out 0.8s;
+}
+.socials-list li:hover, .socials-list li:focus {
+  transform: scale(1.1);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
