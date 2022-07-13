@@ -351,14 +351,15 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 2em 0 5em;
-  transition: all ease-in-out 1s;
-}
-.footer-list li:hover, .footer-list li:focus {
-  transform: scale(1.1);
 }
 
 .footer-list-a {
   color: hsl(168deg, 34%, 41%);
+  transition: all ease-in-out 0.2s;
+}
+.footer-list-a:hover, .footer-list-a:focus {
+  transform: scale(1.1);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .socials-list {
@@ -366,10 +367,11 @@ header {
   justify-content: center;
   gap: 1.5em;
   margin-bottom: 2em;
-  transition: ease-in-out 0.8s;
 }
-.socials-list li:hover, .socials-list li:focus {
-  transform: scale(1.1);
+
+.socials-list-a:hover svg path,
+.socials-list-a:focus svg path {
+  fill: hsl(0deg, 0%, 100%);
 }
 
 .attribution {
