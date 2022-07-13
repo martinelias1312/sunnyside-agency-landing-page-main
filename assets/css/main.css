@@ -101,15 +101,15 @@ header {
 }
 
 .nav-link-li {
-  margin: 1em 0;
-}
-
-.nav-link-li:nth-child(4) {
-  margin-top: 1.3em;
+  margin: 2em 0;
 }
 
 .nav-link {
   color: hsl(232deg, 10%, 55%);
+}
+
+.nav-link-li:nth-child(4) {
+  margin-top: 3em;
 }
 
 .nav-link-contact {
@@ -381,4 +381,68 @@ header {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (min-width: 640px) {
+  .burger,
+.pointer {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    position: static;
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 2em;
+  }
+  .nav-link {
+    color: hsl(0deg, 0%, 100%);
+  }
+  .nav-link-li {
+    margin: 0;
+  }
+  .nav-link-li:nth-child(4) {
+    margin-top: 0;
+  }
+  .nav-link-contact {
+    padding: 0.8em 1.3em;
+    background: hsl(0deg, 0%, 100%);
+  }
+  .nav-link-contact:hover, .nav-link-contact:focus {
+    color: hsl(0deg, 0%, 100%);
+    background: #78cdff;
+  }
+  .brand,
+.audience,
+.services {
+    display: flex;
+  }
+  .brand {
+    flex-direction: row-reverse;
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+  }
+  .testimonials-heading {
+    grid-column: 1/4;
+  }
+  .gallery {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-list {
+    justify-content: center;
+    gap: 3em;
+  }
 }/*# sourceMappingURL=main.css.map */
