@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [[https://www.frontendmentor.io/solutions/responsive-landing-page-5VuhRc6ejb](https://www.frontendmentor.io/solutions/responsive-landing-page-5VuhRc6ejb)]
+- Solution URL: [[https://www.frontendmentor.io/solutions/responsive-landing-page-CJtUGlLpcn](https://www.frontendmentor.io/solutions/responsive-landing-page-CJtUGlLpcn)]
 - Live Site URL: [[https://sunnyside-agency-landing-page-main-seven.vercel.app/)](https://sunnyside-agency-landing-page-main-seven.vercel.app/)]
 
 ## My process
