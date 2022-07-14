@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-5VuhRc6ejb](https://www.frontendmentor.io/solutions/responsive-landing-page-5VuhRc6ejb)
+- Live Site URL: [https://sunnyside-agency-landing-page-main-seven.vercel.app/](https://sunnyside-agency-landing-page-main-seven.vercel.app/)
 
 ## My process
 
