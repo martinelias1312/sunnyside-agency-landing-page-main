@@ -6,11 +6,10 @@
  ------------------------------------------------------ */
 /* Header */
 header {
-  background: url(/assets/images/mobile/image-header.jpg) no-repeat;
-  background-size: cover;
+  height: 85vh;
+  background: url("/assets/images/mobile/image-header.jpg") no-repeat;
   background-position: center;
-  height: 80vh;
-  padding: 2em 2em 0;
+  background-size: cover;
 }
 
 .nav {
@@ -18,6 +17,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 2em;
 }
 
 .nav-list {
@@ -31,6 +31,7 @@ header {
   padding: 1.5em 0;
   width: 80%;
   height: 19em;
+  z-index: 1;
 }
 
 .nav-link-li {
@@ -334,7 +335,13 @@ header {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 665px) {
+  header {
+    background: url("/assets/images/desktop/image-header.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .burger,
   .pointer {
     display: none;
@@ -353,6 +360,11 @@ header {
 
   .nav-link {
     color: $color-white;
+
+    &:hover,
+    &:focus {
+      text-shadow: 1.5px 1px black;
+    }
   }
 
   .nav-link-li {
@@ -374,14 +386,57 @@ header {
     }
   }
 
+  .services,
   .brand,
-  .audience,
-  .services {
-    display: flex;
+  .audience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .brand {
-    flex-direction: row-reverse;
+  .brand > picture {
+    grid-column: 2 / 3;
+  }
+
+  .brand-text-wrap {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .brand-text-wrap,
+  .audience-text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .brand-heading,
+  .audience-heading {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 0.3em;
+  }
+
+  .brand-text,
+  .audience-text {
+    font-size: 0.9em;
+  }
+
+  .learn {
+    margin-top: 0;
+  }
+
+  .graphic,
+  .photography {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .graphic-text-wrap,
+  .photography-text-wrap {
+    margin: 120% 0 0;
   }
 
   .testimonials {
@@ -403,5 +458,69 @@ header {
   .footer-list {
     justify-content: center;
     gap: 3em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .brand-text-wrap,
+  .audience-text-wrap {
+    padding: 2em 3em;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .brand-heading,
+  .audience-heading {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+
+  .brand-text,
+  .audience-text {
+    line-height: 1.6em;
+    font-size: 0.94em;
+  }
+
+  .learn {
+    margin-top: 1.8em;
+  }
+
+  .graphic-p,
+  .photography-p {
+    margin: 0 3em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .brand-text-wrap,
+  .audience-text-wrap {
+    padding: 2em 16%;
+  }
+
+  .graphic,
+  .photography {
+    aspect-ratio: 0;
+  }
+
+  .graphic-text-wrap,
+  .photography-text-wrap {
+    margin: 95% 0 4em;
+  }
+
+  .graphic-p,
+  .photography-p {
+    margin: 0 8em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .brand-text-wrap,
+  .audience-text-wrap {
+    padding: 2em 20%;
+  }
+
+  .graphic-p,
+  .photography-p {
+    margin: 0 10em;
   }
 }
