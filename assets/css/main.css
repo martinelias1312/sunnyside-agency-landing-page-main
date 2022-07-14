@@ -228,12 +228,12 @@ header {
 
 .learn-brand::before,
 .learn-brand::after {
-  background-color: hsl(7deg, 99%, 70%);
+  background-color: hsl(51deg, 100%, 49%);
 }
 
 .learn-audience::before,
 .learn-audience::after {
-  background-color: hsl(51deg, 100%, 49%);
+  background-color: hsl(7deg, 99%, 70%);
 }
 
 /* Graphic design and Photography */
